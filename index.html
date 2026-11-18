@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090711">
+<title>VELORA | Community</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #090711;
+  color: white;
+  font-family: 'Cairo', sans-serif;
+}
+
+header {
+  padding: 20px;
+  background: #100d1c;
+  border-bottom: 1px solid #38265c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #ae8cff;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+nav a {
+  color: #c7bddb;
+  text-decoration: none;
+  margin: 0 8px;
+  font-size: 13px;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background:
+    radial-gradient(circle at top, #482779 0%, #171027 35%, #090711 75%);
+}
+
+.hero h1 {
+  font-size: clamp(42px, 9vw, 75px);
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+.hero h1 span {
+  color: #a783ff;
+}
+
+.hero p {
+  color: #c5bdd5;
+  margin: 20px auto;
+  max-width: 600px;
+  line-height: 2;
+}
+
+.btn {
+  display: inline-block;
+  padding: 13px 25px;
+  margin: 8px;
+  border-radius: 12px;
+  background: linear-gradient(135deg,#a783ff,#7044d5);
+  color: white;
+  text-decoration: none;
+  font-weight: 800;
+  transition: .3s;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px 25px #8855ff66;
+}
+
+section {
+  padding: 65px 20px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.title h2 {
+  font-size: 30px;
+  color: #b69aff;
+}
+
+.title p {
+  color: #aaa0bf;
+  margin-top: 10px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(210px,1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card {
+  background: #171326;
+  border: 1px solid #39285b;
+  padding: 28px 20px;
+  border-radius: 18px;
+  text-align: center;
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: #a783ff;
+}
+
+.card .icon {
+  font-size: 35px;
+}
+
+.card h3 {
+  color: #b99dff;
+  margin: 12px 0;
+}
+
+.card p {
+  color: #b6adc9;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.server {
+  max-width: 750px;
+  margin: auto;
+  padding: 30px;
+  background: #171326;
+  border: 1px solid #7044a9;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.ip {
+  direction: ltr;
+  background: #090711;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 20px 0;
+  color: #b99dff;
+  overflow-wrap: anywhere;
+}
+
+.join {
+  text-align: center;
+  background: linear-gradient(135deg,#211738,#100d1c);
+  border-radius: 20px;
+  padding: 45px 20px;
+  max-width: 850px;
+  margin: auto;
+}
+
+footer {
+  padding: 25px;
+  text-align: center;
+  color: #8e829f;
+  border-top: 1px solid #38265c;
+  font-size: 13px;
+}
+
+@media(max-width:500px) {
+  header {
+    flex-direction: column;
+    gap: 12px;
+  }
+  nav a {
+    margin: 0 5px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">✧ VELORA ✓</div>
+  <nav>
+    <a href="#about">من نحن</a>
+    <a href="#features">المميزات</a>
+    <a href="#minecraft">ماينكرافت</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>WELCOME TO<br><span>VELORA</span></h1>
+
+  <p>
+    أهلاً بك في مجتمع فيلورا الترفيهي!
+    مجتمع يجمع الألعاب والأنمي والأصدقاء
+    والفعاليات في مكان واحد.
+  </p>
+
+  <a class="btn"
+     href="https://discord.gg/pv89H7QBm5"
+     target="_blank">
+     ✨ انضم إلى Discord
+  </a>
+
+  <a class="btn" href="#minecraft">
+     🎮 Minecraft
+  </a>
+</div>
+
+<section id="about">
+  <div class="title">
+    <h2>✧ ABOUT VELORA</h2>
+    <p>اكتشف عالم فيلورا</p>
+  </div>
+
+  <div class="cards" id="features">
+
+    <div class="card">
+      <div class="icon">💬</div>
+      <h3>CHAT</h3>
+      <p>شات للتواصل والتعرف على أصدقاء جدد.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🎮</div>
+      <h3>GAMES</h3>
+      <p>ألعاب وتحديات ومجتمع للاعبين.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">✨</div>
+      <h3>EVENTS</h3>
+      <p>فعاليات ومسابقات وأنشطة مستمرة.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🛠️</div>
+      <h3>SUPPORT</h3>
+      <p>فريق إدارة جاهز لمساعدتك.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="minecraft">
+  <div class="title">
+    <h2>⛏️ MINECRAFT SERVER</h2>
+    <p>انضم إلى عالم فيلورا</p>
+  </div>
+
+  <div class="server">
+    <h2>VELORA BOX</h2>
+    <p style="color:#aaa;margin-top:10px">
+      عنوان سيرفر ماينكرافت
+    </p>
+
+    <div class="ip" id="serverIP">
+      velorabox.play.jumphosting.cloud
+    </div>
+
+    <button class="btn" onclick="copyIP()">
+      📋 نسخ IP
+    </button>
+  </div>
+</section>
+
+<section>
+  <div class="join">
+    <h2 style="color:#b99dff">
+      ✨ JOIN VELORA
+    </h2>
+
+    <p style="color:#c5bdd5;margin:15px">
+      مكانك بيننا، انضم الآن إلى مجتمعنا!
+    </p>
+
+    <a class="btn"
+       href="https://discord.gg/pv89H7QBm5"
+       target="_blank">
+       🚀 دخول سيرفر الديسكورد
+    </a>
+  </div>
+</section>
+
+<footer>
+  © 2026 VELORA COMMUNITY
+  <br>
+  ALL RIGHTS RESERVED
+</footer>
+
+<script>
+function copyIP() {
+  const ip = "velorabox.play.jumphosting.cloud";
+
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(ip).then(() => {
+      alert("تم نسخ عنوان السيرفر!");
+    }).catch(() => {
+      alert("انسخ العنوان: " + ip);
+    });
+  } else {
+    alert("انسخ العنوان: " + ip);
+  }
+}
+</script>
+
+</body>
+</html>
